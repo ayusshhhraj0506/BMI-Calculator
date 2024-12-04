@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="box">
+        <h1>BMI Calculator - JavaScript</h1>
+        <div class="wrapper">
+            <label for="weight">Weight(kgs):</label>
+            <input id="weight" type="number"><br>
+            <label for="weight">Height(m):</label>
+             <input id="height" type="number"><br>
+        </div>
+       <div class="buttonwrapper">
+        <button id="submitted" onclick="calculateBmi()" >Submit</button>
+        <button id="delete" onclick="reload()">Clear</button>
+       </div>
+        
+    </section>
+
+    <section class="output">
+        <h4 id="heading"></h4>
+        <p id="bmi-output"></p>
+        <p id="message"></p>
+    
+    </section>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
